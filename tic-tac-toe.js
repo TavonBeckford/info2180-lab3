@@ -24,7 +24,7 @@ window.onload = function(){
 	const computeWin = (letter) => {
 		Active = false;
   		if (letter === 'X') {
-			var win = document.getElementById("status").innerHTML = "Congratulations! " + `${altSymbol(letter)}`+ " is the Winner!";
+			document.getElementById("status").innerHTML = "Congratulations! " + `${altSymbol(letter)}`+ " is the Winner!";
 			document.getElementById('game').querySelector("div").setAttribute("class", "you-won");
   		} else {
 			var win = document.getElementById("status").innerHTML = "Congratulations! " + `<span>${altSymbol(letter)}</span>`+ " is the Winner!";
@@ -96,9 +96,9 @@ window.onload = function(){
 
 	}
 
-	var res = document.querySelector("button");
+	var resetC = document.querySelector("button");
 
-	res.onclick = function () {
+	resetC.onclick = function () {
 	window.location.reload();
 	}
 	
